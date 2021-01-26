@@ -1,0 +1,11 @@
+.cart-item-name {
+  display: inline-block;
+  width: 92%;
+  padding: 0;
+}
+
+.cart-item-price {
+  display: inline-block;
+  width: 8%;
+  text-align: center;
+}

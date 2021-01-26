@@ -1,0 +1,23 @@
+<mat-card class="card mx-auto">
+  <mat-card-header>
+    <mat-card-title>{{ product.name }}</mat-card-title>
+    <mat-card-subtitle>Price: {{ product.price }}</mat-card-subtitle>
+  </mat-card-header>
+  <div class="image-container">
+    <img
+      class="image"
+      mat-card-image
+      src="{{ product.imageUrl }}"
+      alt="Photo of a Shiba Inu"
+    />
+  </div>
+  <mat-card-content class="description-container">
+    {{ product.description }}
+  </mat-card-content>
+  <mat-card-actions class="btn-action">
+    <button mat-button (click)="onClick(product)" [color]="btnColor">
+      <mat-icon>{{ btnIcon }}</mat-icon>
+      {{ btnTitle }}
+    </button>
+  </mat-card-actions>
+</mat-card>
